@@ -1,0 +1,102 @@
+# StageNow Enrollment Guide for Zebra Devices
+
+This guide walks you through installing and configuring **StageNow** for enrolling Zebra tablets (e.g., ET40 series) into your enterprise environment using a custom configuration profile.
+
+---
+
+## 🔗 Download StageNow
+
+Download the latest version of StageNow from Zebra's official website:
+
+👉 [Zebra StageNow Download Page](https://www.zebra.com/us/en/support-downloads/software/mobile-computer-software/stagenow.html?downloadId=85083242-9046-4c7e-8dd7-7cb2d23cd168)
+
+---
+
+## 📝 Requirements
+
+- Java must be installed before using StageNow. You can download it here (to create the barcodes)
+  👉 [Download Java from Zebra Support](https://www.java.com/en/download/)
+
+---
+
+## 🛠️ Installation Steps
+
+1. **Launch the installer**  
+   When prompted, enter the **administrator password**:  
+   > This is required to access and edit configuration scripts.
+
+2. **Select installation options**  
+   - Tick the relevant checkboxes.
+
+   - If Adobe Acrobat Reader is not installed, follow the wizard to install it. Otherwise, skip this step.
+
+3. **Network Permission**  
+   When the app runs, it will request permission to access the **local network**.  
+   ⚠️ Make sure the computer hosting the StageNow app is **powered on** and connected to the **same local network** during enrollment.  
+   If it's off or disconnected, device enrollment will fail.
+
+---
+
+## 📦 Importing Profiles
+
+1. **Enter the admin password** again to unlock script options.
+2. Download the profile zip file:  
+   `Flos_ET40_Enrollment (StageNow)`
+3. In StageNow, go to:  
+   `All Profiles > Import Profiles`  
+   Import the `.zip` file and wait patiently for it to load (the app is slow).
+
+---
+
+## ⚙️ Configuring the Profile
+
+Navigate to `StageNow Config` and click the **"<"** icon to expand (see Figure 4). Then edit the following steps:
+![StageNow Configuration](images/Picture1.png)
+
+1. **Wi-Fi Setup**  
+   Modify the first step with your **enterprise Wi-Fi credentials**.  
+   > ⚠️ This step must not be skipped or the script will fail.
+
+2. **FileMgr (Step 2)**  
+   Replace the **Source File URI** with:  
+    https://play.google.com/managed/downloadManagingApp?identifier=setup
+
+3. **Intent (Step 4)**  
+Update the **JSON file path** with your own configuration file from **Microsoft Intune**.  
+> If using a different enrollment token, ensure it points to the correct one.
+
+4. **Disable Chrome (Step 5)**  
+This prevents Google account prompts and enforces the use of Microsoft Edge
+
+5. **Display Settings (Step 6)**  
+Adjust tablet settings (brightness, font size, etc.).  
+> This setup only modifies **brightness**.
+
+6. **UI Manager (Step 7)**  
+Enable **battery percentage** display.
+
+7. **Clock Configuration (Step 8)**  
+- Set to **military time**  
+- Add your **Windows NTP server** for time sync
+
+8. **Disable Settings (Step 9)**  
+Disables the Settings button on the Zebra tablet by remapping it to do nothing.
+
+---
+
+## ✅ Finalizing & Testing
+
+1. Click **Review > Publish**
+2. Select the `JS PDF417` stage client
+3. Click **Test** to initiate enrollment and confirm that everything works as expected.
+
+---
+
+## 📋 Notes
+
+- If enrollment fails, double-check Wi-Fi credentials and file paths.
+- Always test profiles before large-scale deployment.
+- If you get the error "the system cannot find the file specified StageNow" it's the JAVA
+
+---
+
