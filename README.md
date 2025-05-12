@@ -50,7 +50,8 @@ Download the latest version of StageNow from Zebra's official website:
 
 ## ⚙️ Configuring the Profile
 
-Navigate to `StageNow Config` and click the **"<"** icon to expand (see Figure 4). Then edit the following steps:
+Navigate to `StageNow Config` and click the **"<"** icon to expand (see the picture below). Then edit the following steps:
+
 ![StageNow Configuration](images/Picture1.png)
 
 1. **Wi-Fi Setup**  
@@ -69,18 +70,19 @@ Update the **JSON file path** with your own configuration file from **Microsoft 
 This prevents Google account prompts and enforces the use of Microsoft Edge
 
 5. **Display Settings (Step 6)**  
-Adjust tablet settings (brightness, font size, etc.).  
+This setting adjusts tablet settings (brightness, font size, etc.).  
 > This setup only modifies **brightness**.
 
 6. **UI Manager (Step 7)**  
-Enable **battery percentage** display.
+This setting enables **battery percentage** display.
 
 7. **Clock Configuration (Step 8)**  
-- Set to **military time**  
-- Add your **Windows NTP server** for time sync
+This setting will:
+  - Set the time to **military time**  
+  - Add a **Windows NTP server** for time sync
 
 8. **Disable Settings (Step 9)**  
-Disables the Settings button on the Zebra tablet by remapping it to do nothing.
+Disables the Settings button on the Zebra tablet by remapping it to do nothing. (User was able to bypass Kiosk Mode)
 
 ---
 
