@@ -125,6 +125,38 @@ If you need to pair an external Bluetooth scanner:
 
 ---
 
+## 🧩 Resolving Keyboard Conflicts (NoKeyBoard App)
+
+There is a known conflict between the **EWMS keyboard** and the default Android keyboard. To prevent overlapping input fields and improve the user experience in the EWMS app, follow these steps:
+
+1. Open the **NoKeyBoard** app.
+2. Tap **Enable in Settings**.
+   - This will open the Android settings screen.
+   - Grant the necessary permission to **NoKeyBoard**.
+   - Press **OK** twice.
+   - Tap **back** once to return to the NoKeyBoard app.
+3. In **Step 2**, switch the input method to **NoKeyBoard**.
+4. Scroll down and tap **HIDE KEYBOARD**.
+5. *(Optional but recommended)* — At the bottom of the app, grant **overlay display permission** to NoKeyBoard.  
+   > This is not required, but I enabled it to avoid any potential input or UI issues.
+
+✅ Your device is now configured to avoid keyboard overlap issues when using EWMS.
+
+### 🚪 Exiting Kiosk Mode
+
+If you need to exit kiosk mode:
+
+- Tap the **Back button 5 times**.
+- The device will **prompt for a 4-digit password**, but you **won’t be able to type it**.
+- Instead, you must **scan a barcode containing that 4-digit password**.
+- This barcode must be created **in advance** by the same user who enrolled the device (if not, you can find this 4-digit password in the Intune settings).
+
+After exiting kiosk mode, you can reactivate the Android keyboard by repeating the NoKeyBoard steps and switching back to your preferred input method.
+
+> ⚠️ This step is **critical** for ensuring smooth operation of the custom **EWMS** application.
+
+---
+
 ## 📋 Notes
 
 - If enrollment fails, double-check Wi-Fi credentials and file paths.
