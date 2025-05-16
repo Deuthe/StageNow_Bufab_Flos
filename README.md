@@ -106,6 +106,25 @@ Once the device is enrolled successfully, follow these final steps:
 
 ---
 
+## 🧩 Resolving Keyboard Conflicts (NoKeyBoard App)
+
+There is a known conflict between the **EWMS keyboard** and the default Android keyboard. To prevent overlapping input fields and improve the user experience in the EWMS app, follow these steps:
+
+1. Open the **NoKeyBoard** app.
+2. Tap **Enable in Settings**.
+   - This will open the Android settings screen.
+   - Grant the necessary permission to **NoKeyBoard**.
+   - Press **OK** twice.
+   - Tap **back** once to return to the NoKeyBoard app.
+3. In **Step 2**, switch the input method to **NoKeyBoard**.
+4. Scroll down and tap **HIDE KEYBOARD**.
+5. *(Optional but recommended)* — At the bottom of the app, grant **overlay display permission** to NoKeyBoard.  
+   > This is not required, but I enabled it to avoid any potential input or UI issues.
+
+✅ Your device is now configured to avoid keyboard overlap issues when using EWMS.
+
+---
+
 ## 🔗 Optional: Pairing an External Scanner
 
 If you need to pair an external Bluetooth scanner:
@@ -124,23 +143,6 @@ If you need to pair an external Bluetooth scanner:
 > After pairing, confirm the scanner is connected and functioning as expected.
 
 ---
-
-## 🧩 Resolving Keyboard Conflicts (NoKeyBoard App)
-
-There is a known conflict between the **EWMS keyboard** and the default Android keyboard. To prevent overlapping input fields and improve the user experience in the EWMS app, follow these steps:
-
-1. Open the **NoKeyBoard** app.
-2. Tap **Enable in Settings**.
-   - This will open the Android settings screen.
-   - Grant the necessary permission to **NoKeyBoard**.
-   - Press **OK** twice.
-   - Tap **back** once to return to the NoKeyBoard app.
-3. In **Step 2**, switch the input method to **NoKeyBoard**.
-4. Scroll down and tap **HIDE KEYBOARD**.
-5. *(Optional but recommended)* — At the bottom of the app, grant **overlay display permission** to NoKeyBoard.  
-   > This is not required, but I enabled it to avoid any potential input or UI issues.
-
-✅ Your device is now configured to avoid keyboard overlap issues when using EWMS.
 
 ### 🚪 Exiting Kiosk Mode
 
