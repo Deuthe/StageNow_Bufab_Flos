@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wap-provisioningdoc>
+  <!--SettingID=2-->
+  <characteristic version="13.1" type="Wi-Fi">
+    <characteristic type="System">
+      <parm name="WiFiAction" value="enable" />
+    </characteristic>
+    <parm name="UseRegulatory" value="0" />
+    <parm name="UseDiagnosticOptions" value="0" />
+    <parm name="UseAdvancedOptions" value="0" />
+    <parm name="NetworkAction" value="Add" />
+    <characteristic type="network-profile">
+      <parm name="SSID" value="SSID Here" />
+      <parm name="SecurityMode" value="2" />
+      <parm name="WPAModeEnterprise" value="3" />
+      <parm name="Authentication" value="2" />
+      <characteristic type="auth-details">
+        <characteristic type="user-credentials">
+          <parm name="Identity" value="Identity" />
+          <parm name="ProtectPassword" value="0" />
+          <parm name="PasswordClear" value="Password here" />
+        </characteristic>
+        <parm name="ServerCertificateAction" value="2" />
+      </characteristic>
+      <parm name="UseDHCP" value="1" />
+      <parm name="UseProxy" value="0" />
+    </characteristic>
+    <parm name="UseHotspotOptions" value="0" />
+  </characteristic>
+  <!--SettingID=8-->
+  <characteristic version="11.3" type="FileMgr">
+    <parm name="FileAction" value="1" />
+    <characteristic type="file-details">
+      <parm name="TargetAccessMethod" value="2" />
+      <parm name="TargetPathAndFileName" value="/data/tmp/public/AndroidDevicePolicy.apk" />
+      <parm name="IfDuplicate" value="1" />
+      <parm name="SourceAccessMethod" value="1" />
+      <parm name="SourceURI" value="Source Here" />
+    </characteristic>
+  </characteristic>
+  <!--SettingID=9-->
+  <characteristic version="11.3" type="AppMgr">
+    <parm name="Action" value="Upgrade" />
+    <parm name="APK" value="/data/tmp/public/AndroidDevicePolicy.apk" />
+  </characteristic>
+  <!--SettingID=10-->
+  <characteristic version="10.5" type="Intent">
+    <parm name="Action" value="EnrollDeviceOwner" />
+    <parm name="Package" value="com.google.android.apps.work.clouddpc" />
+    <parm name="Class" value="com.google.android.apps.work.clouddpc.receivers.CloudDeviceAdminReceiver" />
+    <parm name="DOJsonData" value="Json File" />
+    <parm name="DOJsonFileData" value="Path to hosted JSON Configuration file from Intune" />
+  </characteristic>
+  <!--SettingID=15-->
+  <characteristic version="11.3" type="AppMgr">
+    <parm name="Action" value="DisableApplication" />
+    <parm name="Package" value="com.android.chrome" />
+    <parm name="AccessAppInfoAction" value="DisableAccessAllInfo" />
+  </characteristic>
+  <!--SettingID=16-->
+  <characteristic version="13.3" type="DisplayMgr">
+    <parm name="TimeoutInterval" value="600" />
+    <parm name="FontSize" value="1.0" />
+    <parm name="Adaptivebrightness" value="2" />
+    <parm name="Brightnesslevel" value="60" />
+  </characteristic>
+  <!--SettingID=22-->
+  <characteristic version="13.4" type="UiMgr">
+    <parm name="InputMethodAction" value="1" />
+    <characteristic type="InputMethodDetails">
+      <parm name="InputMethodOption" value="4" />
+      <parm name="InputMethodPackageName" value="io.github.visnkmr.nokeyboard" />
+      <parm name="InputMethodClassName" value="io.github.visnkmr.nokeyboard.IMEService" />
+    </characteristic>
+    <parm name="QuickSettings" value="2" />
+    <parm name="ShowVirtualKeyBoard" value="2" />
+    <parm name="ShowBatteryPercentage" value="1" />
+    <parm name="ConfigExternalKeyboard" value="true" />
+  </characteristic>
+  <!--SettingID=18-->
+  <characteristic version="11.8" type="Clock">
+    <parm name="AutoTimeZone" value="true" />
+    <parm name="AutoTime" value="true" />
+    <characteristic type="AutoTimeDetails">
+      <parm name="NTPServer" value="time.windows.com" />
+      <parm name="SyncInterval" value="00:30:00" />
+      <parm name="SpecifyTimeSyncThreshold" value="false" />
+    </characteristic>
+    <parm name="MilitaryTime" value="1" />
+  </characteristic>
+  <!--SettingID=19-->
+  <characteristic version="13.3" type="KeyMappingMgr">
+    <parm name="Action" value="1" />
+    <characteristic type="KeyMapping">
+      <parm name="KeyIdentifier" value="P1" />
+      <characteristic type="BaseTable">
+        <parm name="BaseBehavior" value="2" />
+        <parm name="BaseKeyCode" value="10026" />
+      </characteristic>
+    </characteristic>
+    <characteristic type="DoubleTrigger">
+      <parm name="DoubleTriggerMode" value="0" />
+    </characteristic>
+  </characteristic>
+</wap-provisioningdoc>
