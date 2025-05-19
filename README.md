@@ -64,32 +64,39 @@ Navigate to `StageNow Config` and click the **"<"** icon to expand (see the pict
 
 3. **Intent (Step 4)**  
 Update the **JSON file path** with your own configuration file from **Microsoft Intune**.  
-> If using a different enrollment token, ensure it points to the correct one.
+> Ensure it points to your token created in Microsoft Intune.
 
 4. **Disable Chrome (Step 5)**  
-This prevents Google account prompts and enforces the use of Microsoft Edge
+This prevents Google account prompts and enforces the use of Microsoft Edge.
 
 5. **Display Settings (Step 6)**  
-This setting adjusts tablet settings (brightness, font size, etc.).  
-> This setup only modifies **brightness**.
+This setting adjusts tablet settings (brightness, font size, etc). 
+   - **Brightness** is set to 60%
+   - **Display timeout** is changed from default to **10 minutes** to avoid interruptions during usage.
+
+
 
 6. **UI Manager (Step 7)**  
-This setting enables **battery percentage** display.
+   - Enables **battery percentage** display.  
+   - Also automates the process of **granting initial permissions to the NoKeyBoard app**, so users don't have to manually switch input methods.
 
-7. **Clock Configuration (Step 8)**  
+   > ⚠️ Users will still need to **manually press “HIDE KEYBOARD”** in the NoKeyBoard app to finalize keyboard suppression.
+
+
+8. **Clock Configuration (Step 8)**  
 This setting will:
-  - Set the time to **military time**  
-  - Add a **Windows NTP server** for time sync
+  - Set the time to **military time**.
+  - Add a **Windows NTP server** for time sync.
 
 8. **Disable Settings (Step 9)**  
-Disables the Settings button on the Zebra tablet by remapping it to do nothing. (User was able to bypass Kiosk Mode)
+Disables the Settings button on the Zebra tablet by remapping it to do nothing (User was able to bypass Kiosk Mode).
 
 ---
 
 ## ✅ Finalizing & Testing
 
-1. Click **Review > Publish**
-2. Select the `JS PDF417` stage client
+1. Click **Review > Publish**.
+2. Select the `JS PDF417` stage client.
 3. Click **Test** to initiate enrollment and confirm that everything works as expected.
 
 ---
