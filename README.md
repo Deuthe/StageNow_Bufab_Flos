@@ -58,30 +58,30 @@ Navigate to `StageNow Config` and click the **"<"** icon to expand (see the pict
    Modify the first step with your **enterprise Wi-Fi credentials**.  
    > ⚠️ This step must not be skipped or the script will fail.
 
-2. **FileMgr (Step 2)**  
+2. **FileMgr (Stage 2)**  
    Replace the **Source File URI** with:  
     https://play.google.com/managed/downloadManagingApp?identifier=setup
 
-3. **Intent (Step 4)**  
+3. **Intent (Stage 4)**  
 Update the **JSON file path** with your own configuration file from **Microsoft Intune**.  
 > If using a different enrollment token, ensure it points to the correct one.
 
-4. **Disable Chrome (Step 5)**  
+4. **Disable Chrome (Stage 5)**  
 This prevents Google account prompts and enforces the use of Microsoft Edge
 
-5. **Display Settings (Step 6)**  
+5. **Display Settings (Stage 6)**  
 This setting adjusts tablet settings (brightness, font size, etc.).  
 > This setup only modifies **brightness**.
 
-6. **UI Manager (Step 7)**  
+6. **UI Manager (Stage 7)**  
 This setting enables **battery percentage** display.
 
-7. **Clock Configuration (Step 8)**  
+7. **Clock Configuration (Stage 8)**  
 This setting will:
   - Set the time to **military time**  
   - Add a **Windows NTP server** for time sync
 
-8. **Disable Settings (Step 9)**  
+8. **Disable Settings (Stage 9)**  
 Disables the Settings button on the Zebra tablet by remapping it to do nothing. (User was able to bypass Kiosk Mode)
 
 9. **Grant Overlay Permissions (Stages 10 & 11)**  
