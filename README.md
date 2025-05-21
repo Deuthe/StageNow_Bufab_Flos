@@ -151,13 +151,12 @@ If you need to pair an external Bluetooth scanner:
 If you need to exit kiosk mode:
 
 - Tap the **Back button 5 times**.
-- The device will **prompt for a 4-digit password**, but you **won’t be able to type it**.
+- The device will **prompt for a 4-digit password**, but you **won’t be able to type it because the NoKeyboard app won't let you**.
 - Instead, you must **scan a barcode containing that 4-digit password**.
-- This barcode must be created **in advance** by the same user who enrolled the device (if not, you can find this 4-digit password in the Intune settings).
-
-After exiting kiosk mode, you can reactivate the Android keyboard by repeating the NoKeyBoard steps and switching back to your preferred input method.
-
+- This barcode can be created **in advance** [Here](https://barcode.tec-it.com/en/?data=Input%20the%20password%20here) (you can find this 4-digit password in the Intune settings).
 > ⚠️ This step is **critical** for ensuring smooth operation of the custom **EWMS** application.
+
+After exiting kiosk mode, you can reactivate the Android keyboard by switching back to your preferred input method in the keyboard settings. 
 
 ---
 
@@ -166,5 +165,5 @@ After exiting kiosk mode, you can reactivate the Android keyboard by repeating t
 - If enrollment fails, double-check Wi-Fi credentials and file paths.
 - Always test profiles before large-scale deployment.
 - If you get the error "the system cannot find the file specified StageNow" it's the JAVA
-
+- 85% of success. 
 ---
