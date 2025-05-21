@@ -19,7 +19,7 @@ Download the latest version of StageNow from Zebra's official website:
 
 ---
 
-## 🛠️ Installation Steps
+## 🛠️ StageNow Installation Steps
 
 1. **Launch the installer**  
    When prompted, enter the **administrator password**:  
@@ -40,11 +40,11 @@ Download the latest version of StageNow from Zebra's official website:
 ## 📦 Importing Profiles
 
 1. **Enter the admin password** again to unlock script options.
-2. Download the profile zip file:  
+2. Download the profile XML file:  
    `Flos_ET40_Enrollment (StageNow)`
 3. In StageNow, go to:  
    `All Profiles > Import Profiles`  
-   Import the `.zip` file and wait patiently for it to load (the app is slow).
+   Import the `.XML` file and wait patiently for it to load (the app is slow).
 
 ---
 
@@ -55,7 +55,7 @@ Navigate to `StageNow Config` and click the **"<"** icon to expand (see the pict
 ![StageNow Configuration](images/Picture1.png)
 
 1. **Wi-Fi Setup**  
-   Modify the first step with your **enterprise Wi-Fi credentials**.  
+   Modify the first Stage with your **enterprise Wi-Fi credentials**.  
    > ⚠️ This step must not be skipped or the script will fail.
 
 2. **FileMgr (Stage 2)**  
