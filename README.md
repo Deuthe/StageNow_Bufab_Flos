@@ -84,7 +84,7 @@ This setting will:
 8. **Disable Settings (Stage 9)**  
 Disables the Settings button on the Zebra tablet by remapping it to do nothing. (User was able to bypass Kiosk Mode)
 
-9. **Grant Overlay Permissions (Stages 10 & 11)**  
+9. **Grant Overlay Permissions to NoKeyboard and Home Managed App if prompted (Stages 10 & 11)**  
    Two additional stages were added to automatically grant **overlay display permissions** to the NoKeyBoard app and Managed Home Screen
 
    - The **application package name** is already pre-configured.
