@@ -165,5 +165,5 @@ After exiting kiosk mode, you can reactivate the Android keyboard by switching b
 - If enrollment fails, double-check Wi-Fi credentials and file paths.
 - Always test profiles before large-scale deployment.
 - If you get the error "the system cannot find the file specified StageNow" it's the JAVA
-- 85% of success. 
+- 93.33%% of success. While doing some tests, 1/15 devices did not enrol successfully. 
 ---
