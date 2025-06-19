@@ -1,6 +1,6 @@
 # StageNow Enrollment Guide for Zebra Devices
 
-This guide walks you through installing and configuring **StageNow** for enrolling Zebra tablets (e.g., ET40 series) into your enterprise environment using a custom configuration profile.
+This guide walks you through installing and configuring **StageNow** for enrolling Zebra tablets (e.g., ET40 series) into your enterprise environment using a custom configuration profile that I prepared:
 
 ---
 
