@@ -14,8 +14,9 @@ Download the latest version of StageNow from Zebra's official website:
 
 ## 📝 Requirements
 
-- Java must be installed before using StageNow. You can download it here (to create the barcodes)
-  👉 [Download Java from Zebra Support](https://www.java.com/en/download/)
+- Java must be installed before using StageNow. You can download it here (to create the barcodes):
+
+👉 [Download Java from Zebra Support](https://www.java.com/en/download/)
 
 ---
 
